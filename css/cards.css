@@ -1,0 +1,136 @@
+
+.link {
+    text-decoration: underline;
+    text-decoration-color: #00ffdd;
+    color: inherit;
+}
+.container { /* centralizar o conteúdo no meio da tela */
+    min-height: 70vh;
+    border-top: 0.01px solid #FFF2E7;
+    /* background: linear-gradient(190deg, rgba(68,68,68,1) 0%, rgba(20,20,20,1) 100%); */
+    font-family: Segoe UI;
+    color: #FFF2E7;
+}
+
+.container .projeto{
+    padding: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 42px;
+}
+
+.fundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: Segoe UI;
+    color: #FFF2E7;
+}
+
+
+.card {
+    background-image: linear-gradient(#333, #333);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    border-radius: 16px;
+    max-width: 360px; /* Fazer o card se limitar a no máximo 360px e não ao texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .5s linear;
+}
+
+.login:hover {
+    background-image: radial-gradient(circle at 80.46% -2.76%, #ff00c2 0, #e500bf 16.67%, #c100b8 33.33%, #9b02ac 50%, #75099e 66.67%, #500f91 83.33%, #291184 100%);
+}
+
+.redirecionamento:hover {
+    background: linear-gradient(#d39e33, #ed5636, #633bbc) padding-box,
+      linear-gradient(260deg, #d39e33, #ed5636, #633bbc) border-box;
+}
+
+.card .loginn {
+    background-image: url(/imgs/login.png);
+    background-position: center; /* fazer a img centralizar no card */
+    background-size: cover; /* fazer a imagem se adequar ao tamanho do card */
+    width: 360px;
+    height: 200px;
+    display: flex; /* alinhar o texto Kayn no centro da foto do card */
+    align-items:end;
+    justify-content: center;
+    opacity: .7;
+    transition: all .5s ease;
+}
+
+.card:hover .loginn {
+    opacity: 1;
+    width: 520px;
+    background-image: url(/imgs/loginDark.png);
+}
+.card .redirecionamento {
+    background-image: url(/imgs/redirecionamento.png);
+    background-position: center; /* fazer a img centralizar no card */
+    background-size: cover; /* fazer a imagem se adequar ao tamanho do card */
+    width: 360px;
+    height: 200px;
+    display: flex; /* alinhar o texto Kayn no centro da foto do card */
+    align-items:end;
+    justify-content: center;
+    opacity: .7;
+    transition: all .9s ease;
+}
+
+.card:hover .redirecionamento {
+    opacity: 1;
+    width: 490px;
+}
+
+.card span { /* Texto da foto */
+    font-size: 30px;
+    font-style: italic; 
+    font-weight: 100; /* alterar grossura da fonte */
+    text-transform: uppercase; /* deixar o texto todo maiusculo */   
+}
+
+.card .content { /* Conteúdo do card */
+    padding: 0 20px; /* margem do texto para o card */
+    overflow: hidden; 
+    height: 0; /* esconder o card fazendo ele ter 0 de altura */
+    transition: all .7s ease;
+    opacity: 0; /* fazer o texto ter 0 de opacidade, fazendo ter um efeito de aparecer qnd passar o mouse */
+}
+
+.card:hover .content {
+    padding: 20px;
+    height: 180px; /* altura q o card terá */
+    opacity: 1; 
+}
+
+.card .content .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .7;
+}
+
+.card .arrow {
+    padding: 5px;
+    font-size: 28px;
+    transform: rotate(180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0deg);
+}
+
