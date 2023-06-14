@@ -1,3 +1,4 @@
+
 .link {
     text-decoration: underline;
     text-decoration-color: #00ffdd;
@@ -55,7 +56,7 @@
 }
 
 .card .loginn {
-    background-image: url(/teste2/assets/imgs/login.png);
+    background-image: url(/imgs/login.png);
     background-position: center; /* fazer a img centralizar no card */
     background-size: cover; /* fazer a imagem se adequar ao tamanho do card */
     width: 360px;
@@ -70,10 +71,10 @@
 .card:hover .loginn {
     opacity: 1;
     width: 520px;
-    background-image: url(/teste2/assets/imgs/loginDark.png);
+    background-image: url(/imgs/loginDark.png);
 }
 .card .redirecionamento {
-    background-image: url(/teste2/assets/imgs/redirecionamento.png);
+    background-image: url(/imgs/redirecionamento.png);
     background-position: center; /* fazer a img centralizar no card */
     background-size: cover; /* fazer a imagem se adequar ao tamanho do card */
     width: 360px;
@@ -132,3 +133,4 @@
 .card:hover .arrow {
     transform: rotate(0deg);
 }
+
